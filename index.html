@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Year-End Recruitment Race</title>
+    <meta name="description" content="A gamified competitive platform for recruiters to track unique monthly applicants." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+      /* Custom scrollbar for better aesthetics */
+      .custom-scrollbar::-webkit-scrollbar {
+          width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+          background: #1e293b; 
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #475569; 
+          border-radius: 3px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #64748b; 
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root" style="display: flex; height: 100vh; justify-content: center; align-items: center; text-align: center; padding: 20px;">
+      <div>
+        <h1 style="font-size: 24px; margin-bottom: 16px;">Loading App...</h1>
+        <p style="color: #94a3b8; max-width: 500px; line-height: 1.5;">
+          If you are seeing this message for a long time, you might have opened the <code>index.html</code> file directly.
+          <br><br>
+          This is a React application and must be run using a web server (like <code>npm run dev</code>) or deployed to a platform like Netlify. It cannot run directly from the desktop file system.
+        </p>
+      </div>
+    </div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
