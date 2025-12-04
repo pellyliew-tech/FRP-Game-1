@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Recruiter } from './types';
-import { loginUser, getStoredData } from './services/storage';
-import { Layout } from './components/Layout';
-import { Login } from './components/Login';
-import { Dashboard } from './components/Dashboard';
+import { loginUser, getStoredData } from './storage';
+import { Layout } from './Layout';
+import { Login } from './Login';
+import { Dashboard } from './Dashboard';
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState<Recruiter | null>(null);

@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Year-End Recruitment Race</title>
-    <meta name="description" content="A gamified competitive platform for recruiters to track unique monthly applicants." />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
       body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
       /* Custom scrollbar for better aesthetics */
@@ -23,32 +22,35 @@
       .custom-scrollbar::-webkit-scrollbar-thumb:hover {
           background: #64748b; 
       }
+      #root:empty::before {
+        content: "⚠️ The website is loading... \A\A If this message stays for more than 5 seconds, you are likely trying to open the Source Code file directly. \A\A Browsers cannot read this code directly. You must deploy this using GitHub + Netlify so it can be 'Built' into a real website.";
+        white-space: pre-wrap;
+        display: block;
+        padding: 40px;
+        text-align: center;
+        color: #94a3b8;
+        font-family: sans-serif;
+        line-height: 1.6;
+      }
     </style>
 <script type="importmap">
 {
   "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
-    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "@google/generative-ai": "https://aistudiocdn.com/@google/generative-ai@^0.24.1",
     "vite": "https://aistudiocdn.com/vite@^7.2.6",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
   }
 }
 </script>
+<link rel="stylesheet" href="/index.css">
 </head>
   <body>
-    <div id="root" style="display: flex; height: 100vh; justify-content: center; align-items: center; text-align: center; padding: 20px;">
-      <div>
-        <h1 style="font-size: 24px; margin-bottom: 16px;">Loading App...</h1>
-        <p style="color: #94a3b8; max-width: 500px; line-height: 1.5;">
-          If you are seeing this message for a long time, you might have opened the <code>index.html</code> file directly.
-          <br><br>
-          This is a React application and must be run using a web server (like <code>npm run dev</code>) or deployed to a platform like Netlify. It cannot run directly from the desktop file system.
-        </p>
-      </div>
-    </div>
+    <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
